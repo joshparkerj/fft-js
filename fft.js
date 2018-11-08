@@ -26,7 +26,11 @@ class Complex {
 			return new Complex(complexDividend.r / realDivisor.r, complexDividend.i / realDivisor.r);
 		}
 		this.view = () => {
-			return `(${this.r}+${this.i}j)`;
+      if (this.i >= 0){
+        return `(${this.r}+${this.i}j)`;
+      } else {
+        return `(${this.r}${this.i}j)`;
+      }
 		}
 	}
 }
