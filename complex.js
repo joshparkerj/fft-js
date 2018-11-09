@@ -27,6 +27,27 @@ class Complex {
       }
       return `${this.r.toFixed(3)}${this.i.toFixed(3)}j`;
 		}
+    this.magnitude = () => {
+      return Math.sqrt(Math.pow(this.r,2)+Math.pow(this.i,2));
+    }
+    this.angle = () => {
+      if(this.r > 0){
+        return Math.atan(this.i/this.r);
+      }
+      if(this.r < 0 && this.i >= 0){
+        return Math.atan(this.i/this.r) + Math.PI;
+      }
+      if(this.r < 0 && this.i < 0){
+        return Math.atan(this.i/this.r) + Math.PI;
+      }
+      if(this.r === 0 && this.i > 0){
+        return Math.PI / 2;
+      }
+      if(this.r === 0 && this.i < 0){
+        return -Math.PI / 2;
+      }
+      return "indeterminate";
+    }
 	}
 }
 
