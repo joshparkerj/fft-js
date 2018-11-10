@@ -5,7 +5,6 @@ usage example:
 node compare-json.js freq-1.json freq-2.json
 */
 
-const fs = require('fs');
 const file_1 = require(`./${process.argv[2]}`);
 const file_2 = require(`./${process.argv[3]}`);
 
