@@ -38,7 +38,7 @@ class Complex {
         return Math.atan(this.i/this.r) + Math.PI;
       }
       if(this.r < 0 && this.i < 0){
-        return Math.atan(this.i/this.r) + Math.PI;
+        return Math.atan(this.i/this.r) - Math.PI;
       }
       if(this.r === 0 && this.i > 0){
         return Math.PI / 2;
