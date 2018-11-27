@@ -1,5 +1,5 @@
 '''
-This file is uses Numpy's fft function so I have something to compare my 
+This file uses Numpy's fft function so I have something to compare my 
 "homebrew" javascript fft function to.
 
 Usage example:

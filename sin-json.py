@@ -1,5 +1,6 @@
 '''
-this file will just generate some random test cases for the fft codes.
+this file will generate a sin function.
+The purpose is to test fft codes.
 
 The first command line argument is the filename to write to.
 The second is the length of the list to write.
