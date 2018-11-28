@@ -1,5 +1,5 @@
 '''
-Thursday's attempt to compress wavefile data using fft.
+Tuesday's attempt to compress wavefile data using fft.
 
 First argument: name of wave file.
 Second argument: percentage of data you want thrown out.
@@ -22,6 +22,7 @@ dft_highlights = []
 for i,x in np.ndenumerate(dft):
  if abs(x) >= dft_cutoff:
   dft_highlights.append((i[0],x))
+
 output = {'rate': rate, 'data': dft_highlights, 'length': datalength}
-with open(sys.argv[1] + '.fft','wb') as file:
+with open(sys.argv[1] + '.' + sys.argv[2] + '.fft','wb') as file:
  pickle.dump(output,file)

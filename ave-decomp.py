@@ -1,5 +1,5 @@
 '''
-Thursday's attempt to decompress wavefile data using fft.
+Tuesday's attempt to decompress wavefile data using fft.
 
 First argument: name of compressed file.
 
